@@ -4,7 +4,7 @@ module.exports = function(RED) {
     function gSheet(config) {
         RED.nodes.createNode(this, config);
         var node = this;
-        this.creds = JSON.parse(RED.nodes.getNode(config.creds).credentials.creds);
+        this.creds = JSON.parse(RED.nodes.getNode(config.creds).this.creds);
         this.method = config.method;
         this.flatten = config.flatten
         node.on('input', function(msg) {
@@ -134,11 +134,11 @@ module.exports = function(RED) {
      this.creds = n.creds;
   }
   RED.nodes.registerType("GSheet",gSheet);
-  RED.nodes.registerType("gauth",gauth,{
-   credentials: {
-     creds: {type:"text"}
-   }
-  });  
+  // RED.nodes.registerType("gauth",gauth,{
+  //  credentials: {
+  //    creds: {type:"text"}
+  //  }
+  // });
 }
 
 function flatten(arr) {
