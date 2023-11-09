@@ -1,6 +1,6 @@
 {
 	"modules": {
-		"*": "./mcu_google_sheets"
+		"*": "./mcu_gsheet"
 	},
-	"preload": "mcu_google_sheets"
+	"preload": "mcu_gsheet"
 }

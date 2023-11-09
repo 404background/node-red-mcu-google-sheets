@@ -11,7 +11,7 @@
     ],
     "node-red": {
         "nodes": {
-            "gsheet": "gsheet.js"
+            "mcu_gsheet": "mcu_gsheet.js"
         },
         "version": ">=1.0.0"
     }
