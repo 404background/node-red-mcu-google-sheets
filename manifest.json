@@ -1,0 +1,6 @@
+{
+	"modules": {
+		"*": "./google_sheets"
+	},
+	"preload": "google_sheets"
+}

@@ -1,7 +1,7 @@
 <script type="text/javascript">
     RED.nodes.registerType('GSheet',{
-        category: 'function',
-        color: '#0da95f',
+        category: 'MCU',
+        color: '#a2aaff',
         defaults: {
           creds: {value:"", type:"gauth"},
           method: {value : ""},
@@ -58,7 +58,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="GSheet">
+<script type="text/html" data-help-name="GSheet">
     <p> Read and Write Google Sheets data.</p>
 
     <h3> Details </h4>
@@ -171,7 +171,7 @@
     });
 </script>
 
-<script type="text/x-red" data-template-name="gauth">
+<script type="text/html" data-template-name="gauth">
     <div class="form-row">
         <label for="node-config-input-authtoken">Creds</label>
         <textarea rows="15" cols="120" id="node-config-input-creds" placeholder="Google Service Accounts Credentials JSON"></textarea>
@@ -179,7 +179,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="gauth">
+<script type="text/html" data-help-name="gauth">
     <p>Google Creds</p>
     <h3>Details</h3>
     <p>Copy JSON object for a Google Service Account Here.</p>
